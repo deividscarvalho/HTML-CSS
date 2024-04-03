@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-classes
+            :: = pseudo-element
+        */
+
+        body{
+            background-color: lightblue;
+            text-align: center;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+        }
+
+        p{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 20px;
+            
+        }
+        
+        a{
+            color: white;
+            text-decoration: none;
+        }
+
+        div{
+            background-color: darkslategray;
+            color: aliceblue;
+            display: inline-block;
+            border: 1px solid black;
+            width: 150px;
+        }
+
+        div:hover{
+            background-color: lightseagreen;
+
+            height: 180px;
+            width: 150px;
+            transition: 0.5s;
+        }
+
+        div > p a {
+            display: none;
+        }
+
+        div:hover > p a {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Filmes</h1>
+    <p>escolha um filme</p>
+    <div class="titanic">Titanic <hr>
+        <p><a href="ingressos.html">19:00</a> <br><a href="">20:10</a> <br> <a href="">21:00</a></p>
+    </div>
+    <div class="Bela_e_a_fera">Bela e a Fera <hr>
+        <p><a href="">19:00</a> <br><a href="">20:10</a> <br> <a href="">21:00</a></p></div>
+    <div class="carros">Carros <hr>
+        <p><a href="">19:00</a> <br><a href="">20:10</a> <br> <a href="">21:00</a></p></div>
+    <div class="guerra">1917 <hr>
+        <p><a href="">19:00</a> <br><a href="">20:10</a> <br> <a href="">21:00</a></p></div>
+</body>
+</html>

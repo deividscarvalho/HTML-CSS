@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIVs</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right, #03374d, #03374d);
+            margin: 0;
+        }
+
+        
+        header {
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        h1.logo {
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-top: 5px;
+            margin-left: 10px;
+        }
+
+        nav{
+            text-align: right;
+        }
+
+        a {
+            margin-right: 20px;
+            color: #415b9a;
+            text-decoration: none;
+            font-size: 20px;
+            text-shadow: 1px 1px 0px #b9a7a7;
+        }
+
+        a:hover{
+            color: red;
+            transition: 0.5s;
+        }
+
+        h1{
+            padding-top: 5px;
+            text-align: center;
+        }
+
+        main{
+            background-color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+
+        footer{
+            background-color: #0d657e;
+            padding: 5px;
+            text-align: center;
+
+        }
+        .ultimo{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!--  Algumas div semanticas 
+          header  - cabeçalho 
+          nav     - navegação 
+          main    - conteudo principal 
+          article - 
+          footer  - radapé       -->
+
+    <header>
+        <h1 class="logo">Jornal.WEB 24h</h1>
+        <nav>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Fique por Dentro</a>
+            <a href="#">Nossas Redes Sociais</a>
+            <a href="#">Cadastre-se</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Notícias da semana</h1><hr>
+        <article>
+            <h2>Esportes</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto optio non et soluta asperiores, accusamus obcaecati aut aperiam voluptatibus officiis maiores sed totam magnam, veniam vero atque consectetur, sapiente excepturi! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, asperiores? Eos necessitatibus numquam provident consequatur, praesentium omnis ut quibusdam quo labore aspernatur velit quis aliquam explicabo sed nihil adipisci illo.</p>
+            <h2>Política</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quibusdam reprehenderit sint quam quos fuga nesciunt! Aspernatur libero neque illo enim dolorem quisquam possimus aut optio deleniti tempore! Illum, aliquid?Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis corporis eligendi quia blanditiis ea magni eaque, nihil consequatur sunt, voluptate numquam vel perspiciatis error illum sapiente corrupti. Assumenda, unde dignissimos.</p>
+            <h2>Religião</h2>
+            <p class="ultimo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perferendis iste minus quaerat laborum perspiciatis explicabo atque. Esse id repellat ut voluptates! Rerum accusantium illum amet ratione laborum vero soluta! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla corporis officiis odit, cumque optio maiores quibusdam voluptas impedit illum fuga placeat. Asperiores, illo mollitia velit tempore nihil deserunt. Omnis, harum.</p>
+        </article>
+    </main>
+    <footer>
+        Essa  matéria  foi feita pelo Jornal.WEB 24h.
+    </footer>
+</body>
+</html>
